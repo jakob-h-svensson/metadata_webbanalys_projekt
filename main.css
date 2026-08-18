@@ -11,6 +11,7 @@ Bakgrund: #FCF8F7
 
 body {
     background-color: #FCF8F7;
+    margin: 0;
 }
 
 h1, h2, h3 {
@@ -21,6 +22,19 @@ p {
     font-family: 'Roboto';
 }
 
+button {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    background-color: #333340;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #454557;
+}
 
 
 /* Navbar */
@@ -58,24 +72,42 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 5px; 
 }
 
 .navbar-secondary a {
     text-decoration: none;
     color: #fff;
     font-family: 'Roboto';
+    padding: 5px;
+    font-size: 0.9rem;
 }
 
-button {
-    padding: 0.6rem 1rem;
-    border-radius: 6px;
-    background-color: #333340;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    border: none;
+.navbar-secondary a:hover {
+    color: #d4825f;
 }
 
-button:hover {
+footer {
     background-color: #454557;
+    text-align: center;
+    height: 100%;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    font-size: small;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: small;
+    padding: 5px;
+}
+
+footer a:hover {
+    color: rgb(186, 176, 176);
+    text-decoration: none;
 }
