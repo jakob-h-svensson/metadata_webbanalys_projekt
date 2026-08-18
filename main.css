@@ -160,10 +160,25 @@ footer a:hover {
     border: 1px solid #e5e5e5;
     border-radius: 6px;
     padding: 1rem;
+    overflow: hidden;
+}
+
+.product-card img {
+    display: block;
+    transition: transform 0.3s ease;
 }
 
 .product-card:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card a, p{
+    text-decoration: none;
+    color: #333340;
 }
 
 .product-bottom {
