@@ -8,3 +8,106 @@ Navbar: #333340
 Second bar: #454557
 Bakgrund: #FCF8F7
 ============================================ */
+
+body {
+    background-color: #FCF8F7;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto'
+}
+
+p {
+    font-family: 'Roboto';
+}
+
+.navbar-primary {
+    background-color: #333340;
+}
+
+.navbar-secondary {
+    background-color: #454557;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    background-color: #333340;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #454557;
+}
+
+/* Kategori Header */
+
+.category-header {
+    max-width: 700px;
+    margin-left: 2%;
+    line-height: 1.6;
+    font-family: 'Roboto';
+}
+
+.category-header summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.category-header summary::after {
+    content: " ↓";
+}
+
+.category-header details[open] summary::after {
+    content: " ↑";
+}
+
+/* Produkt-grid */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.product-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.product-card:hover {
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.product-bottom button {
+    width: 30%;
+}
+
+
+
