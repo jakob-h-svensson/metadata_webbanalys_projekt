@@ -8,3 +8,74 @@ Navbar: #333340
 Second bar: #454557
 Bakgrund: #FCF8F7
 ============================================ */
+
+body {
+    background-color: #FCF8F7;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto'
+}
+
+p {
+    font-family: 'Roboto';
+}
+
+
+
+/* Navbar */
+
+.navbar-primary {
+    background-color: #333340;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.navbar-primary button {
+    background-color: #ca6940;
+    white-space: nowrap;
+}
+
+.navbar-primary button:hover {
+    background-color: #d4825f;
+}
+
+.navbar-primary input {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.navbar-primary img:hover {
+    transform: scale(1.05);
+}
+
+.navbar-secondary {
+    background-color: #454557;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-secondary a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto';
+}
+
+button {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    background-color: #333340;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #454557;
+}
