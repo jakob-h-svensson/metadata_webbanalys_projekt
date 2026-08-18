@@ -11,6 +11,7 @@ Bakgrund: #FCF8F7
 
 body {
     background-color: #FCF8F7;
+    margin: 0;
 }
 
 h1, h2, h3 {
@@ -19,14 +20,6 @@ h1, h2, h3 {
 
 p {
     font-family: 'Roboto';
-}
-
-.navbar-primary {
-    background-color: #333340;
-}
-
-.navbar-secondary {
-    background-color: #454557;
 }
 
 button {
@@ -43,71 +36,78 @@ button:hover {
     background-color: #454557;
 }
 
-/* Kategori Header */
 
-.category-header {
-    max-width: 700px;
-    margin-left: 2%;
-    line-height: 1.6;
-    font-family: 'Roboto';
-}
+/* Navbar */
 
-.category-header summary {
-    list-style: none;
-    cursor: pointer;
-}
-
-.category-header summary::after {
-    content: " ↓";
-}
-
-.category-header details[open] summary::after {
-    content: " ↑";
-}
-
-/* Produkt-grid */
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-@media (max-width: 900px) {
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.product-card {
-    border: 1px solid #e5e5e5;
-    border-radius: 6px;
-    padding: 1rem;
-}
-
-.product-card:hover {
-    border: 1px solid #e5e5e5;
-    border-radius: 6px;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-}
-
-.product-bottom {
+.navbar-primary {
+    background-color: #333340;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 8px;
     align-items: center;
-    margin-top: auto;
+    padding: 8px 16px;
 }
 
-.product-bottom button {
-    width: 30%;
+.navbar-primary button {
+    background-color: #ca6940;
+    white-space: nowrap;
 }
 
+.navbar-primary button:hover {
+    background-color: #d4825f;
+}
 
+.navbar-primary input {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    width: 100%;
+}
 
+.navbar-primary img:hover {
+    transform: scale(1.05);
+}
+
+.navbar-secondary {
+    background-color: #454557;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px; 
+}
+
+.navbar-secondary a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto';
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.navbar-secondary a:hover {
+    color: #d4825f;
+}
+
+footer {
+    background-color: #454557;
+    text-align: center;
+    height: 100%;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    font-size: small;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: small;
+    padding: 5px;
+}
+
+footer a:hover {
+    color: rgb(186, 176, 176);
+    text-decoration: none;
+}
