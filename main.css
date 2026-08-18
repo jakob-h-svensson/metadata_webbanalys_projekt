@@ -197,3 +197,26 @@ footer a:hover {
     font-weight: bold;
     font-size: large;
 }
+
+
+[data-lucide] {
+    color: #dfd6d2;
+    height: 14px !important;
+}
+
+.lucide-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+    background: transparent !important;
+}
+
+.lucide-button svg {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.lucide-button svg:hover {
+    color: #ca6940;
+}
