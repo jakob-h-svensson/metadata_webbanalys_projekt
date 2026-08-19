@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Whey To Go</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+    
+/* Produkt-sida */
+        .product-page-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                gap: 3rem;
+                max-width: 700px;
+                margin: 4rem auto;
+                padding: 0 2%;
+            }
+
+        .product-page-grid img {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: 400px !important;
+            object-fit: contain;
+            border-radius: 6px;
+            margin: 0 auto;
+        }
+
+        .product-page-grid h1 {
+            font-size: 2rem;
+            margin: 0 0 1rem;
+        }
+
+        .product-page-grid p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0 0 1.5rem;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem;
+        }
+
+        .add-to-cart-btn {
+            padding: 12px 28px;
+            background-color: var(--color-accent);
+            color: var(--color-text-light);
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .add-to-cart-btn:hover {
+            opacity: 0.9;
+        }
+
+        .more-item-bar {
+                background-color: #FCF8F7;
+                max-width: 1000px;
+                margin: 4rem auto;
+                padding: 0 2%;
+                text-align: center;
+            }
+
+        .more-item-bar h2 {
+            margin-bottom: 2rem;
+        }
+
+        .more-item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .product-card-products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 1px solid #e5e5e5;
+        border-radius: 6px;
+        padding: 1rem;
+        overflow: hidden;
+        width: 220px;
+        height: 250px;
+    }
+
+        .product-card-products img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+        .product-card-products:hover {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-card-products:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-card-products a,
+        .product-card-products p {
+            text-decoration: none;
+            color: #333340;
+        }
+
+        .product-card-products h3 {
+        font-size: 1rem;
+        margin: 0.75rem 0 0.5rem;
+        overflow: hidden;
+    }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            max-width: 1000px;
+            margin: 2rem auto 0;
+            padding: 0 2%;
+            color: #333340;
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: rgb(186, 176, 176);
+        }
+
+    
+
+
+    </style>
+
+
+</head>
+<body>
+    <header class="navbar-primary">
+        <a href="../index.html">
+            <img src="../images/nav_logo.png" height="100px">
+        </a>
+        <input type="search" placeholder="Sök bland 10-tals produkter">
+        <button class="lucide-button">
+            <i data-lucide="shopping-cart"></i>
+        </button>
+        <button class="lucide-button">
+            <i data-lucide="user"></i>
+        </button>
+    </header>
+    <header class="navbar-secondary">
+        <nav>
+            <a href="../protein.html">Protein</a>
+            <a href="../kreatin.html">Kreatin</a>
+            <a href="../dryck.html">Dryck</a>
+            <a href="../vitaminer.html">Vitaminer & Mineraler</a>
+            <a href="../tillbehor.html">Tillbehör</a>
+        </nav>
+    </header>
+
+  <main>
+     <a href="../dryck.html" class="back-link">← Tillbaka</a>
+    <section class="product-page-grid">
+        <article class="product-page-grid-img">
+            <img src="../images/dryck3.png" alt="Vitamindryck 500ml, 12-pack">
+        </article>
+        <article class="product-page-grid-h1">
+            <h1>Vitamindryck 500ml, 12-pack</h1>
+            <p>Vitamindryck på 500 ml som ger dig ett enkelt och smidigt sätt att få i dig dryck och vitaminer under dagen. Levereras i ett 12-pack, så du behöver inte börja dagen med att förhandla med dig själv om du verkligen ska ta med en flaska.
+
+Perfekt till träningen, jobbet eller när du bara vill ha något annat än vatten. En flaska är dessutom betydligt enklare att ta med sig än en näve vitamintabletter och ett glas.</p>
+            <div class="product-bottom">
+            <p class="product-price">189 kr</p>
+            <button>Lägg i varukorg</button>
+            </div>
+        </article>
+    </section>
+
+    
+
+    <section class="more-item-bar">
+        <h2>Andra har också tittat på:</h2>
+        <div class="more-item-grid">
+            <article class="product-card-products">
+                <a href="products_tillbehor/tillbehor4.html">
+                    <h3>Snabba brillor</h3>
+                    <img src="../images/tillbehor4.png" alt="Snabba brillor">
+                    <p class="product-price">14 990 kr</p>
+                </a>
+            </article>
+            <article class="product-card-products">
+                <a href="products_tillbehor/tillbehor3.html">
+                    <h3>Kreatin Gummies</h3>
+                    <img src="../images/tillbehor3.png"  alt="Kreatin Gummies">
+                    <p class="product-price">249 kr</p>
+                </a>
+            </article>
+            <article class="product-card-products">
+                <a href="products_tillbehor/vitamin4.html">
+                    <h3>Magnesium</h3>
+                    <img src="../images/vitamin4.png"  alt="Magnesium">
+                    <p class="product-price">119 kr</p>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    
+
+  </main>
+
+  <footer class="footer-content">
+    <p>&copy; 2026 Whey To Go</p>
+  </footer>
+  <script>
+    lucide.createIcons();
+</script>
+</body>
+</html>
