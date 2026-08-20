@@ -57,6 +57,10 @@ button:hover {
     background-color: #d4825f;
 }
 
+.navbar-primary form {
+    flex: 1;
+}
+
 .navbar-primary input {
     padding: 0.6rem 1rem;
     border-radius: 6px;
@@ -166,6 +170,7 @@ footer a:hover {
 .product-card img {
     display: block;
     transition: transform 0.3s ease;
+    height: 200px;
 }
 
 .product-card:hover {
@@ -181,6 +186,10 @@ footer a:hover {
     color: #333340;
 }
 
+.product-card h2 {
+    font-size: 1.17rem;
+}
+
 .product-bottom {
     display: flex;
     justify-content: space-between;
@@ -192,6 +201,11 @@ footer a:hover {
     width: 30%;
 }
 
+.product-bottom p {
+    font-weight: bold;
+    font-size: large;
+}
+
 .price-offer {
     color: #fc0707;
     font-weight: bold;
@@ -201,22 +215,23 @@ footer a:hover {
 
 [data-lucide] {
     color: #dfd6d2;
-    height: 14px !important;
+    height: 14px;
 }
 
-.lucide-button {
+.lucide-icons {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.6rem;
-    background: transparent !important;
+    padding: 0.8rem;
+    gap: 0.6rem;
+    background: transparent;
 }
 
-.lucide-button svg {
-    width: 30px !important;
-    height: 30px !important;
+.lucide-icons svg {
+    width: 30px;
+    height: 30px;
 }
 
-.lucide-button svg:hover {
+.lucide-icons svg:hover {
     color: #ca6940;
 }
