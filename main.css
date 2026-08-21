@@ -57,6 +57,10 @@ button:hover {
     background-color: #d4825f;
 }
 
+.navbar-primary form {
+    flex: 1;
+}
+
 .navbar-primary input {
     padding: 0.6rem 1rem;
     border-radius: 6px;
@@ -111,7 +115,6 @@ footer a:hover {
     color: rgb(186, 176, 176);
     text-decoration: none;
 }
-
 
 /* Varukorg (cart) */
 
@@ -220,4 +223,125 @@ footer a:hover {
 
 .checkout-btn:hover {
     background-color: #d4825f;
+}
+
+
+/* Kategori Header */
+
+.category-header {
+    max-width: 700px;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 1.6;
+    font-family: 'Roboto';
+}
+
+.category-header summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.category-header summary::after {
+    content: " ↓";
+}
+
+.category-header details[open] summary::after {
+    content: " ↑";
+}
+
+/* Produkt-grid */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 2%
+}
+
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.product-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.product-card img {
+    display: block;
+    transition: transform 0.3s ease;
+    height: 200px;
+}
+
+.product-card:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card a, p{
+    text-decoration: none;
+    color: #333340;
+}
+
+.product-card h2 {
+    font-size: 1.17rem;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.product-bottom button {
+    width: 30%;
+}
+
+.product-bottom p {
+    font-weight: bold;
+    font-size: large;
+}
+
+.price-offer {
+    color: #fc0707;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+[data-lucide] {
+    color: #dfd6d2;
+    height: 14px;
+}
+
+.lucide-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    gap: 0.6rem;
+    background: transparent;
+}
+
+.lucide-icons svg {
+    width: 30px;
+    height: 30px;
+}
+
+.lucide-icons svg:hover {
+    color: #ca6940;
 }
