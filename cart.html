@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Varukorg - Whey To Go</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <header class="navbar-primary">
+        <a href="index.html">
+            <img src="images/nav_logo.png" height="100px">
+        </a>
+        <input type="search" placeholder="Sök bland 10-tals produkter">
+        <button>Varukorg</button>
+        <button>Logga in</button>
+    </header>
+    <header class="navbar-secondary">
+        <nav>
+            <a href="protein.html">Protein</a>
+            <a href="kreatin.html">Kreatin</a>
+            <a href="dryck.html">Dryck</a>
+            <a href="vitaminer.html">Vitaminer & Mineraler</a>
+            <a href="tillbehor.html">Tillbehör</a>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <h1>Varukorg</h1>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Pris</th>
+                    <th>Antal</th>
+                    <th>Summa</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cart-item">
+                    <td class="cart-item-info">
+                        <img src="images/protein.png" alt="Protein">
+                        <span>Whey Protein - Choklad</span>
+                    </td>
+                    <td>299 kr</td>
+                    <td>
+                        <div class="quantity-selector">
+                            <button aria-label="Minska antal">-</button>
+                            <input type="number" value="1" min="1">
+                            <button aria-label="Öka antal">+</button>
+                        </div>
+                    </td>
+                    <td class="cart-item-sum">299 kr</td>
+                    <td><button class="remove-btn" aria-label="Ta bort">Ta bort</button></td>
+                </tr>
+                <tr class="cart-item">
+                    <td class="cart-item-info">
+                        <img src="images/kreatin.png" alt="Kreatin">
+                        <span>Kreatin Monohydrat</span>
+                    </td>
+                    <td>199 kr</td>
+                    <td>
+                        <div class="quantity-selector">
+                            <button aria-label="Minska antal">-</button>
+                            <input type="number" value="2" min="1">
+                            <button aria-label="Öka antal">+</button>
+                        </div>
+                    </td>
+                    <td class="cart-item-sum">398 kr</td>
+                    <td><button class="remove-btn" aria-label="Ta bort">Ta bort</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="cart-summary">
+            <div class="cart-summary-row">
+                <span>Delsumma</span>
+                <span>697 kr</span>
+            </div>
+            <div class="cart-summary-row">
+                <span>Frakt</span>
+                <span>49 kr</span>
+            </div>
+            <div class="cart-summary-row cart-summary-total">
+                <span>Totalt</span>
+                <span>746 kr</span>
+            </div>
+            <button class="checkout-btn">Till kassan</button>
+        </section>
+    </main>
+
+    <footer>
+        <a href="about.html">Om oss</a>
+        <a href="index.html">Kontakt</a>
+        <p>&copy; 2026 WheyToGo</p>
+    </footer>
+</body>
+</html>
