@@ -2,23 +2,45 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Whey To Go</title>
-    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whey To Go - Din träningsbutik online</title>
+    <meta name="description" content="Köp kosttillskott, protein, kreatin och tillbehör hos Whey To Go. Bästa priserna och snabb leverans.">
+    
+    <!-- Google tag (gtag.js) -  G-XXXXXXXXXX bytts mot  riktiga Measurement ID sen-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Konfigurering GA4
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header class="navbar-primary">
-        <a href="index.html">
-            <img src="images/nav_logo.png" height="100px">
-        </a>
-        <input type="search" placeholder="Sök bland 10-tals produkter">
-        <button>Varukorg</button>
-        <button>Logga in</button>
-    </header>
-    <header class="navbar-secondary">
-        <nav>
+    <header>
+        <div class="navbar-primary">
+            <a href="index.html">
+                <img src="images/nav_logo.png" height="100px" alt="Whey To Go Logotyp">
+            </a>
+            <form action="search.html" method="GET">
+                <input type="search" name="q" placeholder="Sök bland 10-tals produkter">    
+            </form>
+            <div class="lucide-icons">
+                <a href="cart.html" aria-label="Gå till varukorg">
+                    <i data-lucide="shopping-cart"></i>
+                </a>
+                <a href="placeholder-login.html" aria-label="Logga in">
+                    <i data-lucide="user"></i>
+                </a>
+            </div>
+        </div>
+        <nav class="navbar-secondary">
             <a href="protein.html">Protein</a>
             <a href="kreatin.html">Kreatin</a>
             <a href="dryck.html">Dryck</a>
@@ -26,27 +48,84 @@
             <a href="tillbehor.html">Tillbehör</a>
         </nav>
     </header>
-  
- 
-    <section id="k1">
-        <h2>Kategori 1</h2>
-        <div>Produkt 1.1 - 100 kr <button>Köp</button></div>
-        <div>Produkt 1.2 - 200 kr <button>Köp</button></div>
-        <div>Produkt 1.3 - 300 kr <button>Köp</button></div>
-    </section>
 
-    <section id="k1">
-        <h2>Kategori 1</h2>
-        <div>Produkt 1.1 - 100 kr <button>Köp</button></div>
-        <div>Produkt 1.2 - 200 kr <button>Köp</button></div>
-        <div>Produkt 1.3 - 300 kr <button>Köp</button></div>
-    </section>
-    
+    <main>
+        <section class="category-header">
+            <h1>Välkommen till Whey To Go!</h1>
+            <p>Vi erbjuder marknadens bästa kosttillskott för att hjälpa dig nå dina träningsmål. Navigera i menyn ovan för att hitta rätt kategori, eller kolla in några av våra kunders absoluta favoriter nedan.</p>
+        </section>
+
+        <section class="category-header" style="margin-top: 2rem;">
+            <h2>Våra bästsäljare</h2>
+        </section>
+
+        <!-- Product grid med Mikrodata från Schema.org -->
+        <section class="product-grid">
+
+            <!-- Produkt 1: Protein -->
+            <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                <a href="products_protein/protein1.html" itemprop="url">
+                    <img src="images/protein1.png" height="200px" alt="Protein Whey80, 1000g" itemprop="image">
+                    <h3 itemprop="name">Protein Whey80, 1000g</h3>
+                </a>
+                <!-- Pris och Köp separerat från länken för giltig HTML -->
+                <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="SEK">
+                    <p class="product-price" itemprop="price" content="299">299 kr</p>
+                    <button type="button" onclick="gtag('event', 'add_to_cart', { 'items': [{ 'item_name': 'Protein Whey80, 1000g', 'price': 299 }] })">Köp</button>
+                </div>
+            </article>
+
+            <!-- Produkt 2: Kreatin -->
+            <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                <a href="products_kreatin/kreatin1.html" itemprop="url">
+                    <img src="images/kreatin1.png" height="200px" alt="Kreatin Monohydrate, 500 g" itemprop="image">
+                    <h3 itemprop="name">Kreatin Monohydrate, 500 g</h3>
+                </a>
+                <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="SEK">
+                    <p class="product-price" itemprop="price" content="179">179 kr</p>
+                    <button type="button" onclick="gtag('event', 'add_to_cart', { 'items': [{ 'item_name': 'Kreatin Monohydrate, 500 g', 'price': 179 }] })">Köp</button>
+                </div>
+            </article>
+
+            <!-- Produkt 3: Dryck -->
+            <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                <a href="products_dryck/dryck2.html" itemprop="url">
+                    <img src="images/dryck2.png" height="200px" alt="PWO Shot, 12 x 50ml" itemprop="image">
+                    <h3 itemprop="name">PWO Shot, 12 x 50ml</h3>
+                </a>
+                <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="SEK">
+                    <p class="price-offer" itemprop="price" content="199">199 kr</p>
+                    <p><del>259 kr</del></p>
+                    <button type="button" onclick="gtag('event', 'add_to_cart', { 'items': [{ 'item_name': 'PWO Shot, 12 x 50ml', 'price': 199 }] })">Köp</button>
+                </div>
+            </article>
+
+            <!-- Produkt 4: Tillbehör -->
+            <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                <a href="products_tillbehor/tillbehor2.html" itemprop="url">
+                    <img src="images/tillbehor2.png" height="200px" alt="Shaker Svart, 700ml" itemprop="image">
+                    <h3 itemprop="name">Shaker Svart, 700ml</h3>
+                </a>
+                <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="SEK">
+                    <p class="product-price" itemprop="price" content="59">59 kr</p>
+                    <button type="button" onclick="gtag('event', 'add_to_cart', { 'items': [{ 'item_name': 'Shaker Svart, 700ml', 'price': 59 }] })">Köp</button>
+                </div>
+            </article>
+
+        </section>
+    </main>
 
     <footer>
         <a href="about.html">Om oss</a>
-        <a href="index.html">Kontakt</a>
+        <a href="contact.html">Kontakt</a>
         <p>&copy; 2026 WheyToGo</p>
     </footer>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
