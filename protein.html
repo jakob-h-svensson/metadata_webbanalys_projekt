@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Whey To Go</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whey To Go - Din träningsbutik online</title>
+    <meta name="description" content="Köp kosttillskott, protein, kreatin och tillbehör hos Whey To Go. Bästa priserna och snabb leverans.">
+    
+    <!-- Google tag (gtag.js) -  G-XXXXXXXXXX bytts mot  riktiga Measurement ID sen-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Konfigurering GA4
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
@@ -10,23 +23,23 @@
 </head>
 <body>
     <header>
-        <div class="navbar-primary">
+        <div>
             <a href="index.html">
-                <img src="images/nav_logo.png" height="100px">
+                <img src="images/nav_logo.png" height="100px" alt="Whey To Go Logotyp">
             </a>
-            <form>
-                <input type="search" placeholder="Sök bland 10-tals produkter">    
+            <form action="search.html" method="GET">
+                <input type="search" name="q" placeholder="Sök bland 10-tals produkter">    
             </form>
             <div class="lucide-icons">
-                <a href="cart.html">
+                <a href="cart.html" aria-label="Gå till varukorg">
                     <i data-lucide="shopping-cart"></i>
                 </a>
-                <a href="placeholder-login.html">
+                <a href="placeholder-login.html" aria-label="Logga in">
                     <i data-lucide="user"></i>
                 </a>
             </div>
         </div>
-        <nav class="navbar-secondary">
+        <nav>
             <a href="protein.html">Protein</a>
             <a href="kreatin.html">Kreatin</a>
             <a href="dryck.html">Dryck</a>
