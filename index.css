@@ -19,7 +19,16 @@ main {
         details[open] summary::after {
             content: " ↑";
         }
+
+    h2 {
+        margin-left: 2%;
+        margin-right: 2%;
+        line-height: 1.6;
+        font-family: 'Roboto';
+    }
 }
+
+
 
 /* Produkt-grid & cards */
 main {

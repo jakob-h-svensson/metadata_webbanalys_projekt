@@ -9,7 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="cart.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -39,10 +39,10 @@
         </nav>
     </header>
 
-    <main class="cart-page">
+    <main>
         <h1>Varukorg</h1>
 
-        <table class="cart-table">
+        <table>
             <thead>
                 <tr>
                     <th>Produkt</th>
@@ -53,7 +53,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="cart-item">
+                <tr>
                     <td class="cart-item-info">
                         <img src="images/protein1.png" alt="Protein">
                         <span>Protein Whey80, 1000g</span>
@@ -66,10 +66,10 @@
                             <button aria-label="Öka antal">+</button>
                         </div>
                     </td>
-                    <td class="cart-item-sum">299 kr</td>
+                    <td><b>299 kr</b></td>
                     <td><button class="remove-btn" aria-label="Ta bort">Ta bort</button></td>
                 </tr>
-                <tr class="cart-item">
+                <tr>
                     <td class="cart-item-info">
                         <img src="images/kreatin.png" alt="Kreatin">
                         <span>Kreatin Monohydrate, 500 g</span>
@@ -82,26 +82,26 @@
                             <button aria-label="Öka antal">+</button>
                         </div>
                     </td>
-                    <td class="cart-item-sum">358 kr</td>
+                    <td><b>358 kr</b></td>
                     <td><button class="remove-btn" aria-label="Ta bort">Ta bort</button></td>
                 </tr>
             </tbody>
         </table>
 
-        <section class="cart-summary">
-            <div class="cart-summary-row">
+        <section>
+            <div>
                 <span>Delsumma</span>
                 <span>657 kr</span>
             </div>
-            <div class="cart-summary-row">
+            <div>
                 <span>Frakt</span>
                 <span>49 kr</span>
             </div>
-            <div class="cart-summary-row cart-summary-total">
+            <div class="cart-summary-total">
                 <span>Totalt</span>
                 <span>706 kr</span>
             </div>
-            <button class="checkout-btn">Till kassan</button>
+            <button>Till kassan</button>
         </section>
     </main>
 

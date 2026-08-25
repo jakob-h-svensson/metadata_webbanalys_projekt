@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -39,52 +40,49 @@
     </header>
 
     <main>
-        <section class="category-header">
+        <header>
             <h1>Välkommen till Whey To Go!</h1>
             <p>Vi erbjuder marknadens bästa kosttillskott för att hjälpa dig nå dina träningsmål. Navigera i menyn ovan för att hitta rätt kategori, eller kolla in några av våra kunders absoluta favoriter nedan.</p>
-        </section>
+        </header>
 
-        <section class="category-header" style="margin-top: 2rem;">
-            <h2>Våra bästsäljare</h2>
-        </section>
-
+        <h2>Våra bästsäljare</h2>
         <!-- Product grid med Mikrodata från Schema.org -->
-        <section class="product-grid">
+        <section>
 
             <!-- Produkt 1: Protein -->
-            <article class="product-card" itemscope itemtype="https://schema.org/Product">
+            <article itemscope itemtype="https://schema.org/Product">
                 <a href="products_protein/protein1.html" itemprop="url">
                     <img src="images/protein1.png" height="200px" alt="Protein Whey80, 1000g" itemprop="image">
                     <h3 itemprop="name">Protein Whey80, 1000g</h3>
                 </a>
                 <!-- Pris och Köp separerat från länken för giltig HTML -->
-                <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                     <meta itemprop="priceCurrency" content="SEK">
-                    <p class="product-price" itemprop="price" content="299">299 kr</p>
+                    <p itemprop="price" content="299">299 kr</p>
                     <button type="button" onclick="gtag('event', 'add_to_cart', { 'items': [{ 'item_name': 'Protein Whey80, 1000g', 'price': 299 }] })">Köp</button>
                 </div>
             </article>
 
             <!-- Produkt 2: Kreatin -->
-            <article class="product-card" itemscope itemtype="https://schema.org/Product">
+            <article itemscope itemtype="https://schema.org/Product">
                 <a href="products_kreatin/kreatin1.html" itemprop="url">
                     <img src="images/kreatin1.png" height="200px" alt="Kreatin Monohydrate, 500 g" itemprop="image">
                     <h3 itemprop="name">Kreatin Monohydrate, 500 g</h3>
                 </a>
-                <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                     <meta itemprop="priceCurrency" content="SEK">
-                    <p class="product-price" itemprop="price" content="179">179 kr</p>
+                    <p itemprop="price" content="179">179 kr</p>
                     <button type="button" onclick="gtag('event', 'add_to_cart', { 'items': [{ 'item_name': 'Kreatin Monohydrate, 500 g', 'price': 179 }] })">Köp</button>
                 </div>
             </article>
 
             <!-- Produkt 3: Dryck -->
-            <article class="product-card" itemscope itemtype="https://schema.org/Product">
+            <article itemscope itemtype="https://schema.org/Product">
                 <a href="products_dryck/dryck2.html" itemprop="url">
                     <img src="images/dryck2.png" height="200px" alt="PWO Shot, 12 x 50ml" itemprop="image">
                     <h3 itemprop="name">PWO Shot, 12 x 50ml</h3>
                 </a>
-                <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                     <meta itemprop="priceCurrency" content="SEK">
                     <p class="price-offer" itemprop="price" content="199">199 kr</p>
                     <p><del>259 kr</del></p>
@@ -93,14 +91,14 @@
             </article>
 
             <!-- Produkt 4: Tillbehör -->
-            <article class="product-card" itemscope itemtype="https://schema.org/Product">
+            <article itemscope itemtype="https://schema.org/Product">
                 <a href="products_tillbehor/tillbehor2.html" itemprop="url">
                     <img src="images/tillbehor2.png" height="200px" alt="Shaker Svart, 700ml" itemprop="image">
                     <h3 itemprop="name">Shaker Svart, 700ml</h3>
                 </a>
-                <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                     <meta itemprop="priceCurrency" content="SEK">
-                    <p class="product-price" itemprop="price" content="59">59 kr</p>
+                    <p itemprop="price" content="59">59 kr</p>
                     <button type="button" onclick="gtag('event', 'add_to_cart', { 'items': [{ 'item_name': 'Shaker Svart, 700ml', 'price': 59 }] })">Köp</button>
                 </div>
             </article>
