@@ -2,21 +2,34 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Varukorg - Whey To Go</title>
-    <link rel="stylesheet" href="main.css">
+    
+    <title>Whey To Go | Dryck</title>
+    
+
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="categories.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header class="navbar-primary">
-        <a href="index.html">
-            <img src="images/nav_logo.png" height="100px">
-        </a>
-        <input type="search" placeholder="Sök bland 10-tals produkter">
-        <button>Varukorg</button>
-        <button>Logga in</button>
-    </header>
-    <header class="navbar-secondary">
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="images/nav_logo.png" height="100px" alt="Whey To Go Logotyp">
+            </a>
+            <form action="search.html" method="GET">
+                <input type="search" name="q" placeholder="Sök bland 10-tals produkter">    
+            </form>
+            <div class="lucide-icons">
+                <a href="cart.html" aria-label="Gå till varukorg">
+                    <i data-lucide="shopping-cart"></i>
+                </a>
+                <a href="placeholder-login.html" aria-label="Logga in">
+                    <i data-lucide="user"></i>
+                </a>
+            </div>
+        </div>
         <nav>
             <a href="protein.html">Protein</a>
             <a href="kreatin.html">Kreatin</a>
@@ -97,5 +110,8 @@
         <a href="index.html">Kontakt</a>
         <p>&copy; 2026 WheyToGo</p>
     </footer>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>
