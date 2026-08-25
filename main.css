@@ -245,6 +245,11 @@ footer {
     height: 14px;
 }
 
+.product-bottom p {
+    font-weight: bold;
+    font-size: large;
+}
+
 .price-offer {
     color: #fc0707;
 }
