@@ -2,134 +2,14 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Whey To Go</title>
+    <title>Whey To Go | Protein | Whey80, 1000g</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../products.css">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-    
-    /* Produkt-sida */
-        .product-page-grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                align-items: center;
-                gap: 3rem;
-                max-width: 700px;
-                margin: 4rem auto;
-                padding: 0 2%;
-            }
-
-        .product-page-grid img {
-            display: block;
-            width: 100%;
-            max-width: 400px;
-            height: 400px !important;
-            object-fit: contain;
-            border-radius: 6px;
-            margin: 0 auto;
-        }
-
-        .product-page-grid h1 {
-            font-size: 2rem;
-            margin: 0 0 1rem;
-        }
-
-        .product-page-grid p {
-            font-size: 1rem;
-            line-height: 1.5;
-            margin: 0 0 1.5rem;
-        }
-
-        .product-price {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 0 1rem;
-        }
-
-        .more-item-bar {
-                background-color: #FCF8F7;
-                max-width: 1000px;
-                margin: 4rem auto;
-                padding: 0 2%;
-                text-align: center;
-            }
-
-        .more-item-bar h2 {
-            margin-bottom: 2rem;
-        }
-
-        .more-item-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
-            gap: 2rem;
-            justify-content: center;
-        }
-
-        .product-card-products {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        border: 1px solid #e5e5e5;
-        border-radius: 6px;
-        padding: 1rem;
-        overflow: hidden;
-        width: 220px;
-        height: 250px;
-    }
-
-        .product-card-products img {
-        width: 100%;
-        height: 140px;
-        object-fit: cover;
-        border-radius: 4px;
-    }
-
-        .product-card-products:hover {
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-        }
-
-        .product-card-products:hover img {
-            transform: scale(1.05);
-        }
-
-        .product-card-products a,
-        .product-card-products p {
-            text-decoration: none;
-            color: #333340;
-        }
-
-        .product-card-products h3 {
-        font-size: 1rem;
-        margin: 0.75rem 0 0.5rem;
-        overflow: hidden;
-    }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            max-width: 1000px;
-            margin: 2rem auto 0;
-            padding: 0 2%;
-            color: #333340;
-            font-size: 0.95rem;
-            font-family: 'Inter', sans-serif;
-            text-decoration: none;
-        }
-
-        .back-link:hover {
-            color: rgb(186, 176, 176);
-        }
-
-    
-
-
-    </style>
-
-
 </head>
+
 <body>
     <header>
         <div class="navbar-primary">
@@ -157,62 +37,63 @@
         </nav>
     </header>
 
-  <main>
-     <a href="../protein.html" class="back-link">← Tillbaka</a>
-    <section class="product-page-grid">
-        <article>
-            <img src="../images/protein1.png" alt="Protein Whey80, 1000g">
-        </article>
+    <aside>
+        <a href="../protein.html" class="back-link">← Tillbaka</a>
+    </aside>
+
+    <main>
+        <img src="../images/protein1.png" alt="Protein Whey80, 1000g">
+        <div>
         <article>
             <h1>Protein Whey80, 1000g</h1>
             <p>Protein Whey80 är ett klassiskt vassleprotein för dig som vill komplettera kosten med protein, exempelvis efter träningen eller som en del av ett mellanmål. Med 1000 gram i påsen får du gott om protein för många shakes.</p>
-            <div class="product-bottom">
-            <p>299 kr</p>
-            <button>Lägg i varukorg</button>
+            <div>
+                <p>299 kr</p>
+                <button>Lägg i varukorg</button>
             </div>
-        </article>
-    </section>
+        </div>
+    </main>
 
     
 
-    <section class="more-item-bar">
+    <section>
         <h2>Andra har också tittat på:</h2>
-        <div class="more-item-grid">
-            <article class="product-card-products">
+        <nav>
+            <article>
                 <a href="../products_tillbehor/tillbehor4.html">
                     <h3>Snabba brillor</h3>
                     <img src="../images/tillbehor4.png" alt="Snabba brillor">
-                    <p class="product-price">14 990 kr</p>
+                    <p>14 990 kr</p>
                 </a>
             </article>
-            <article class="product-card-products">
+            <article>
                 <a href="../products_tillbehor/tillbehor3.html">
                     <h3>Vattenkanna</h3>
                     <img src="../images/tillbehor3.png"  alt="Vattenkanna">
-                    <p class="product-price">249 kr</p>
+                    <p>249 kr</p>
                 </a>
             </article>
-            <article class="product-card-products">
+            <article>
                 <a href="../products_vitamin/vitamin4.html">
                     <h3>Magnesium</h3>
                     <img src="../images/vitamin4.png"  alt="Magnesium">
-                    <p class="product-price">119 kr</p>
+                    <p>119 kr</p>
                 </a>
             </article>
-        </div>
+        </nav>
     </section>
 
     
 
-  </main>
+  
 
- <footer>
+    <footer>
         <a href="../about.html">Om oss</a>
         <a href="../index.html">Kontakt</a>
         <p>&copy; 2026 WheyToGo</p>
     </footer>
-  <script>
-    lucide.createIcons();
-</script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
