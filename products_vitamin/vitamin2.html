@@ -12,23 +12,23 @@
 
 <body>
     <header>
-        <div class="navbar-primary">
+        <div>
             <a href="../index.html">
-                <img src="../images/nav_logo.png" height="100px">
+                <img src="../images/nav_logo.png" alt="Whey To Go Logotyp">
             </a>
-            <form>
-                <input type="search" placeholder="Sök bland 10-tals produkter">    
+            <form action="search.html" method="GET">
+                <input type="search" name="q" placeholder="Sök bland 10-tals produkter">    
             </form>
             <div class="lucide-icons">
-                <a href="../cart.html">
+                <a href="cart.html" aria-label="Gå till varukorg">
                     <i data-lucide="shopping-cart"></i>
                 </a>
-                <a href="placeholder-login.html">
+                <a href="placeholder-login.html" aria-label="Logga in">
                     <i data-lucide="user"></i>
                 </a>
             </div>
         </div>
-        <nav class="navbar-secondary">
+        <nav>
             <a href="../protein.html">Protein</a>
             <a href="../kreatin.html">Kreatin</a>
             <a href="../dryck.html">Dryck</a>

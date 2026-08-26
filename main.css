@@ -57,6 +57,10 @@ header {
             width: 100%;
         }
 
+        img {
+            height: 100px;
+        }
+
         img:hover {
             transform: scale(1.05);
         }
