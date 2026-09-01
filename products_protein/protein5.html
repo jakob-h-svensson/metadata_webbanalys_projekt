@@ -41,13 +41,17 @@
         <a href="../protein.html" class="back-link">← Tillbaka</a>
     </aside>
 
-  <main>
-        <img src="../images/protein5.png" alt="Färdigblandad Proteindryck, 8-pack">
+    <main>
+        <article itemscope itemtype="https://schema.org/Product"></article>
+        <img itemprop="image" src="../images/protein5.png" alt="Färdigblandad Proteindryck, 8-pack">
         <div>
-            <h1>Färdigblandad Proteindryck, 8-pack</h1>
-            <p>Färdigblandad proteindryck i ett praktiskt 8-pack för dig som vill ha protein utan att behöva plocka fram shaker och pulver. Öppna flaskan, drick och du är redo att fortsätta dagen.</p>
-            <div>
-                <p>199 kr</p>
+            <h1 itemprop="name">Färdigblandad Proteindryck, 8-pack</h1>
+            <p itemprop="description">Färdigblandad proteindryck i ett praktiskt 8-pack för dig som vill ha protein utan att behöva plocka fram shaker och pulver. Öppna flaskan, drick och du är redo att fortsätta dagen.</p>
+            <meta itemprop="category" content="Protein">
+            <meta itemprop="category" content="Dryck">
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <p><span itemprop="price">199</span> kr</p>
+                <meta itemprop="priceCurrency" content="SEK">
                 <button>Lägg i varukorg</button>
             </div>
         </div>
@@ -58,25 +62,37 @@
     <section>
         <h2>Andra har också tittat på:</h2>
         <nav>
-            <article>
-                <a href="../products_tillbehor/tillbehor4.html">
-                    <h3>Snabba brillor</h3>
-                    <img src="../images/tillbehor4.png" alt="Snabba brillor">
-                    <p>14 990 kr</p>
+            <article itemscope itemtype="https://schema.org/Product">
+                <a itemprop="url" href="../products_tillbehor/tillbehor4.html">
+                    <h3 itemprop="name">Snabba brillor</h3>
+                    <img itemprop="image" src="../images/tillbehor4.png" alt="Snabba brillor">
+                    <meta itemprop="category" content="Tillbehör">
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <p><span itemprop="price" content="14990">14 990</span>kr</p>
+                        <meta itemprop="priceCurrency" content="SEK">
+                    </div>
                 </a>
             </article>
-            <article>
-                <a href="../products_tillbehor/tillbehor3.html">
-                    <h3>Vattenkanna</h3>
-                    <img src="../images/tillbehor3.png"  alt="Vattenkanna">
-                    <p>249 kr</p>
+            <article itemscope itemtype="https://schema.org/Product">
+                <a itemprop="url" href="../products_tillbehor/tillbehor3.html">
+                    <h3 itemprop="name">Vattenkanna</h3>
+                    <img itemprop="image" src="../images/tillbehor3.png"  alt="Vattenkanna">
+                    <meta itemprop="category" content="Tillbehör">
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <p><span itemprop="price">259</span>kr</p>
+                        <meta itemprop="priceCurrency" content="SEK">
+                    </div>
                 </a>
             </article>
-            <article>
-                <a href="../products_vitamin/vitamin4.html">
-                    <h3>Magnesium</h3>
-                    <img src="../images/vitamin4.png"  alt="Magnesium">
-                    <p>119 kr</p>
+            <article itemscope itemtype="https://schema.org/Product">
+                <a itemprop="url" href="../products_vitamin/vitamin4.html">
+                    <h3 itemprop="name">Magnesium</h3>
+                    <img itemprop="image" src="../images/vitamin4.png"  alt="Magnesium">
+                    <meta itemprop="category" content="Vitaminer & Mineraler">
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <p><span itemprop="price">119</span>kr</p>
+                        <meta itemprop="priceCurrency" content="SEK">
+                    </div>
                 </a>
             </article>
         </nav>

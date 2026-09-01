@@ -1,4 +1,4 @@
-main {
+main > article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -6,7 +6,7 @@ main {
     max-width: 700px;
     margin: 4rem auto;
     padding: 0 2%;
- 
+        
         img {
             display: block;
             width: 100%;
