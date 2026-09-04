@@ -1,0 +1,121 @@
+main > article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 0 2%;
+        
+        img {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: 400px;
+            object-fit: contain;
+            border-radius: 6px;
+            margin: 0 auto;
+        }
+ 
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 1rem;
+        }
+ 
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0 0 1.5rem;
+        }
+
+        > div >  div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                p {
+                    font-weight: bold;
+                    font-size: large;
+                }
+                button {
+                    width: 30%;
+                }
+        }
+    }
+ 
+
+section {
+    background-color: #FCF8F7;
+    margin: 4rem auto;
+    padding: 0 2%;
+    text-align: center;
+ 
+        h2{
+            margin-bottom: 2rem;
+        }
+       
+        nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+            gap: 2rem;
+            justify-content: center;
+ 
+                article {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border: 1px solid #e5e5e5;
+                    border-radius: 6px;
+                    padding: 1rem;
+                    overflow: hidden;
+                    width: 220px;
+                    height: 250px;
+ 
+                    img {
+                        width: 100%;
+                        height: 140px;
+                        object-fit: cover;
+                        border-radius: 4px;
+                    }
+ 
+                    &:hover {
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+                    }
+ 
+                    &:hover img {
+                        transform: scale(1.05);
+                    }
+ 
+                    a,
+                    p {
+                        text-decoration: none;
+                        color: #333340;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        margin: 0 0 1rem;
+                    }
+ 
+                    h3 {
+                        font-size: 1rem;
+                        margin: 0.75rem 0 0.5rem;
+                        overflow: hidden;
+                    }
+                }
+        }
+}
+ 
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 1000px;
+    margin: 2rem auto 0;
+    padding: 0 2%;
+    color: #333340;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+ 
+.back-link:hover {
+    color: rgb(186, 176, 176);
+}

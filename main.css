@@ -8,3 +8,143 @@ Navbar: #333340
 Second bar: #454557
 Bakgrund: #FCF8F7
 ============================================ */
+
+body {
+    background-color: #FCF8F7;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto'
+}
+
+p {
+    font-family: 'Roboto';
+}
+
+button {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    background-color: #333340;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #454557;
+}
+
+
+/* Navbar */
+header { 
+    > div {
+        background-color: #333340;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        padding: 8px 16px;
+
+        form{
+            flex: 1;
+        }
+
+        input {
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            width: 100%;
+        }
+
+        img {
+            height: 100px;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    > nav {
+        background-color: #454557;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Roboto';
+            padding: 5px;
+            font-size: 0.9rem;
+        }
+
+        a:hover {
+            color: #d4825f;
+        }
+    }
+
+}
+
+
+/* Footer */
+footer {
+    background-color: #454557;
+    text-align: center;
+    height: 100%;
+    padding: 10px;
+
+    p {
+        color: white;
+        font-size: small;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-size: small;
+        padding: 5px;
+    }
+
+    a:hover {
+        color: rgb(186, 176, 176);
+        text-decoration: none;
+    }
+}
+
+/* Icons */
+
+.lucide-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    gap: 0.6rem;
+    background: transparent;
+}
+
+.lucide-icons svg {
+    width: 30px;
+    height: 30px;
+}
+
+.lucide-icons svg:hover {
+    color: #ca6940;
+}
+
+[data-lucide] {
+    color: #dfd6d2;
+    height: 14px;
+}
+
+.product-bottom p {
+    font-weight: bold;
+    font-size: large;
+}
+
+.price-offer {
+    color: #fc0707;
+}
