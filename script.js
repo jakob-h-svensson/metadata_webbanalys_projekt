@@ -63,6 +63,100 @@ const products = {
     },
 
     /* Vitaminer */
+
+    v1: {
+        item_id: "vitamin1",
+        item_name: "Magnesium, 80 tabletter",
+        item_category: "Vitaminer och Mineraler",
+        price: 119
+    },
+
+    v2: {
+        item_id: "vitamin2",
+        item_name: "Vitamin Dailys, 90 tabletter",
+        item_category: "Vitaminer och Mineraler",
+        price: 79
+    },
+
+    v3: {
+        item_id: "vitamin3",
+        item_name: "Zink 25 mg, 60 tabletter",
+        item_category: "Vitaminer och Mineraler",
+        price: 139
+    },
+
+    v4: {
+        item_id: "vitamin4",
+        item_name: "ZMA Premium, 60 kapslar",
+        item_category: "Vitaminer och Mineraler",
+        price: 269
+    },
+
+    v5: {
+        item_id: "vitamin5",
+        item_name: "Vitamin D3, 60 tabletter",
+        item_category: "Vitaminer och Mineraler",
+        price: 89
+    },
+
+    /* Dryck */
+    d1: {
+        item_id: "dryck1",
+        item_name: "Energidryck koffein, 24 x 33cl",
+        item_category: "Dryck",
+        price: 319
+    },
+
+    d2: {
+        item_id: "dryck2",
+        item_name: "PWO Shot, 12 x 50ml",
+        item_category: "Dryck",
+        price: 199
+    },
+
+    d3: {
+        item_id: "dryck3",
+        item_name: "Vitamindryck 500ml, 12-pack",
+        item_category: "Dryck",
+        price: 189
+    },
+
+    d4: {
+        item_id: "dryck4",
+        item_name: "Energidryck BCAA, 12 x 33cl",
+        item_category: "Dryck",
+        price: 219
+    },
+
+    /* Kreatin */
+    k1: {
+        item_id: "kreatin1",
+        item_name: "Kreatin Monohydrat, 500g",
+        item_category: "Kreatin",
+        price: 179
+    },
+
+    k2: {
+        item_id: "kreatin2",
+        item_name: "Kreatin Monohydrate Smaksatt, 300g",
+        item_category: "Kreatin",
+        price: 195
+    },
+
+    k3: {
+        item_id: "kreatin3",
+        item_name: "Kreatin Gummies, 30 st",
+        item_category: "Kreatin",
+        price: 249
+    },
+
+    k4: {
+        item_id: "kreatin4",
+        item_name: "Creatine Chew Tabs, 60 st",
+        item_category: "Kreatin",
+        price: 189
+    },
+    
     
 };
 

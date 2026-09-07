@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="categories.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -76,7 +77,7 @@
                 <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                     <p><span itemprop="price">179</span> kr</p>
                     <meta itemprop="priceCurrency" content="SEK"/>
-                    <button type="button">Köp</button>
+                    <button onclick="addToCart('k1')"> Köp</button>
                 </div>
             </article>
 
@@ -89,7 +90,7 @@
                 <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                     <p><span itemprop="price">195</span> kr</p>
                     <meta itemprop="priceCurrency" content="SEK"/>
-                    <button type="button">Köp</button>
+                    <button onclick="addToCart('k2')"> Köp</button>
                 </div>
             </article>
 
@@ -103,7 +104,7 @@
                     <p class="price-offer"><span itemprop="price">249</span> kr</p>
                     <meta itemprop="priceCurrency" content="SEK"/>
                     <p><del>209 kr</del></p>
-                    <button type="button">Köp</button>
+                    <button onclick="addToCart('k3')"> Köp</button>
                 </div>
             </article>
 
@@ -116,7 +117,7 @@
                 <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                     <p><span itemprop="price">189</span> kr</p>
                     <meta itemprop="priceCurrency" content="SEK"/>
-                    <button type="button">Köp</button>
+                    <button onclick="addToCart('k4')"> Köp</button>
                 </div>
             </article>
         </section>
