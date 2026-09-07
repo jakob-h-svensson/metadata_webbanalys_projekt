@@ -1,5 +1,6 @@
 
 const products = {
+    /* Protein */
     p1: {
         item_id: "protein1",
         item_name: "Protein Whey80, 1000g",
@@ -29,7 +30,39 @@ const products = {
         item_name: "Protein Whey100, 750g",
         item_category: "Protein",
         price: 299
-    }
+    },
+
+    /* Tillbehör */
+
+    tb1: {
+        item_id: "tillbehor1",
+        item_name: "Vattenflaska Rostfritt, 700ml",
+        item_category: "Tillbehör",
+        price: 199
+    },
+
+    tb2: {
+        item_id: "tillbehor2",
+        item_name: "Shaker Svart, 700ml",
+        item_category: "Tillbehör",
+        price: 59
+    },
+
+    tb3: {
+        item_id: "tillbehor3",
+        item_name: "Vattenkanna \"Jug\", 2 liter",
+        item_category: "Tillbehör",
+        price: 189
+    },
+
+    tb4: {
+        item_id: "tillbehor4",
+        item_name: "Snabba brillor",
+        item_category: "Tillbehör",
+        price: 14990
+    },
+
+    /* Vitaminer */
     
 };
 
