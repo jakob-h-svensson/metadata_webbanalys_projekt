@@ -19,6 +19,42 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="categories.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script defer>
+
+    function addToCart(productId, productName, price) {
+
+        dataLayer.push({ecommerce: null});
+    
+        dataLayer.push({
+
+            event: 'add_to_cart',
+
+            ecommerce: {
+
+                currency: 'SEK',
+
+                value: price,
+
+                items: [{
+
+                    item_id: productId,
+
+                    item_name: productName,
+
+                    item_category: "Protein",
+
+                    price: price,
+
+                    quantity: 1
+
+                }]
+
+            }
+
+        });
+
+    }
+    </script>
 </head>
 <body>
 
@@ -79,7 +115,7 @@
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <p><span itemprop="price">299</span> kr</p>
                 <meta itemprop="priceCurrency" content="SEK"/>
-                <button>Köp</button>
+                <button onclick="addToCart('protein1', 'Protein Whey80, 1000g', 299)"> Köp</button>
             </div>
         </article>
 
@@ -148,5 +184,6 @@
 <script>
     lucide.createIcons();
 </script>
+
 </body>
 </html>
