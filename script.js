@@ -186,8 +186,10 @@ function addToCart(productKey) {
 function purchase() {
 
     const rows = document.querySelectorAll('tbody tr[data-product]');
+
     const items = [];
     let value = 0;
+    let shipping_cost = 49;
 
     rows.forEach(row => {
         const product = products[row.dataset.product];
@@ -210,7 +212,7 @@ function purchase() {
         ecommerce: {
             transaction_id: 'T' + Date.now(),
             currency: 'SEK',
-            value: value,
+            value: value + shipping_cost,
             items: items
         }
     });
