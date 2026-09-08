@@ -183,3 +183,36 @@ function addToCart(productKey) {
     });
 }
 
+function purchase() {
+
+    const rows = document.querySelectorAll('tbody tr[data-product]');
+    const items = [];
+    let value = 0;
+
+    rows.forEach(row => {
+        const product = products[row.dataset.product];
+        const quantity = Number(row.querySelector('input[type="number"]').value);
+
+        items.push({
+            item_id: product.item_id,
+            item_name: product.item_name,
+            item_category: product.item_category,
+            price: product.price,
+            quantity: quantity
+        });
+
+        value += product.price * quantity;
+    });
+
+    dataLayer.push({ecommerce: null});
+    dataLayer.push({
+        event: 'purchase',
+        ecommerce: {
+            transaction_id: 'T' + Date.now(),
+            currency: 'SEK',
+            value: value,
+            items: items
+        }
+    });
+}
+

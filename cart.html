@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="cart.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -68,7 +69,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr data-product="p1">
                     <td class="cart-item-info">
                         <img src="images/protein1.png" alt="Protein">
                         <span>Protein Whey80, 1000g</span>
@@ -84,7 +85,7 @@
                     <td><b>299 kr</b></td>
                     <td><button class="remove-btn" aria-label="Ta bort">Ta bort</button></td>
                 </tr>
-                <tr>
+                <tr data-product="k1">
                     <td class="cart-item-info">
                         <img src="images/kreatin.png" alt="Kreatin">
                         <span>Kreatin Monohydrate, 500 g</span>
@@ -116,7 +117,7 @@
                 <span>Totalt</span>
                 <span>706 kr</span>
             </div>
-            <button>Till kassan</button>
+            <button onclick="purchase()">Till kassan</button>
         </section>
     </main>
 
