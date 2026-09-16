@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="categories.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -79,7 +80,7 @@
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <p><span itemprop="price">299</span> kr</p>
                 <meta itemprop="priceCurrency" content="SEK"/>
-                <button>Köp</button>
+                <button onclick="addToCart('p1')"> Köp</button>
             </div>
         </article>
 
@@ -92,7 +93,7 @@
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <p><span itemprop="price">289</span> kr</p>
                 <meta itemprop="priceCurrency" content="SEK"/>
-                <button>Köp</button>
+                <button onclick="addToCart('p2')"> Köp</button>
             </div>
         </article>
 
@@ -105,7 +106,7 @@
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <p><span itemprop="price">199</span> kr</p>
                 <meta itemprop="priceCurrency" content="SEK"/>
-                <button id="buy-protein">Köp</button>
+                <button onclick="addToCart('p5')"> Köp</button>
             </div>
         </article>
 
@@ -119,7 +120,7 @@
                 <p class="price-offer"><span itemprop="price">299</span> kr</p>
                 <meta itemprop="priceCurrency" content="SEK"/>
                 <p><del>319 kr</del></p>
-                <button>Köp</button>
+                <button onclick="addToCart('p4')"> Köp</button>
             </div>
         </article>
 
@@ -132,7 +133,7 @@
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <p><span itemprop="price">299</span> kr</p>
                 <meta itemprop="priceCurrency" content="SEK"/>
-                <button>Köp</button>
+                <button onclick="addToCart('p3')"> Köp</button>
             </div>
         </article>
  
@@ -148,5 +149,6 @@
 <script>
     lucide.createIcons();
 </script>
+
 </body>
 </html>
